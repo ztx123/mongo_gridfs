@@ -1,0 +1,29 @@
+server:
+  port: 9000
+
+# �������ݿ�����
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/txzhang
+      database: txzhang
+  devtools:
+    restart:
+      additional-paths:  resources/**,static/**,templates/**
+# ���ip��Ⱥ���Բ�����������
+# spring.data.mongodb.uri=mongodb://user:pwd@ip1:port1,ip2:port2/database
+
+# ��̬��Դ�ŵ�/resources/static ����
+  mvc:
+    static-path-pattern: /**
+    view:
+      prefix: /
+      suffix: .html
+
+
+logging:
+  config: classpath:logback-spring.xml
+  pattern:
+    level: info ,debug
+  path: /log
+

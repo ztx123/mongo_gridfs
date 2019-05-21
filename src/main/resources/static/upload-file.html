@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <title>附件上传</title>
+</head>
+<body>
+<div id="article" style="align-content: center">
+    <div>全为爱上了你偏偏你不知</div>
+    <div>春风轻吹点点火花衫月夜</div>
+    <div>人人开开心心说说故事</div>
+    <div>终于倾出这小子的往事</div>
+    <div>长年累月为你再自持</div>
+    <div>今宵知否对你的暗示</div>
+    <div>为何真的将它当故事</div>
+    <div>偏偏痴心小子只知道上集</div>
+    <div>祈求下集是个可爱梦儿</div>
+    <div>知不知对你牵上万缕爱意</div>
+</div>
+<form id="file-form" action="/api/save" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <input type="button" id="upload" value="上传">
+</form>
+<div id="container">
+
+</div>
+
+<img src="/api/preview?fileId=5ce27a4b323d8233d0ec5f80">
+</body>
+<script src="js/upload-file.js"></script>
+</html>
